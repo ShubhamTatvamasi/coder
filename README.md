@@ -40,6 +40,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: coder
+  namespace: coder
 spec:
   tls:
     - hosts:
