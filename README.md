@@ -6,7 +6,9 @@ helm install coder coder/coder \
   -n coder \
   --set storageClassName=manual \
   --set ingress.useDefault=false \
+  --set timescale.resources.limits.cpu=null \
   --set timescale.resources.limits.memory=null \
+  --set timescale.resources.requests.cpu=null \
   --set timescale.resources.requests.memory=null
 ```
 
