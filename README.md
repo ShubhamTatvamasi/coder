@@ -1,5 +1,10 @@
 # coder
 
+Create namespace:
+```bash
+kubectl create ns coder
+```
+
 Install coder
 ```bash
 helm install coder coder/coder \
