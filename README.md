@@ -9,8 +9,15 @@ Install coder
 ```bash
 helm install coder coder/coder \
   -n coder \
-  --set storageClassName=manual \
   --set ingress.useDefault=false \
+  --set cemanager.resources.limits.cpu=null \
+  --set cemanager.resources.limits.memory=null \
+  --set cemanager.resources.requests.cpu=null \
+  --set cemanager.resources.requests.memory=null \
+  --set envproxy.resources.limits.cpu=null \
+  --set envproxy.resources.limits.memory=null \
+  --set envproxy.resources.requests.cpu=null \
+  --set envproxy.resources.requests.memory=null \
   --set timescale.resources.limits.cpu=null \
   --set timescale.resources.limits.memory=null \
   --set timescale.resources.requests.cpu=null \
